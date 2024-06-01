@@ -1,0 +1,121 @@
+@media screen and (min-width: 620px) {
+.job-card:where(.astro-THRIS56X):nth-child(n) {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+.sm\:odd\:pl-0:nth-child(odd) {
+    padding-left: 0;
+}
+.odd\:pr-6:nth-child(odd) {
+    padding-right: 1.5rem;
+}
+.job-card:where(.astro-THRIS56X):nth-child(2n - 1) .circle:where(.astro-THRIS56X) {
+    left: calc(100% - 10px);
+}
+
+.job-card:where(.astro-THRIS56X):nth-child(2n + 1) .circle:where(.astro-THRIS56X) {
+    left: calc(100% - 10px);
+}
+
+ .w-\[50\%\] {
+    width: 50%;
+}
+.gradient {
+    background: #006fff;
+    background: linear-gradient(to bottom,#006fff,#0058cc);
+}
+.job-card:where(.astro-THRIS56X):nth-child(2n + 1) .job-picture:where(.astro-THRIS56X) {
+    left: calc(100% + 2rem);
+}
+.text-light-texto-primary {
+    --tw-text-opacity: 1;
+    color: rgb(25 25 25 / var(--tw-text-opacity));
+}
+.font-black {
+    font-weight: 900;
+}
+.text-light-gray-primary {
+    --tw-text-opacity: 1;
+    color: rgb(102 102 102 / var(--tw-text-opacity));
+}
+.italic {
+    font-style: italic;
+}
+
+.text-\[0\.91rem\] {
+    font-size: .91rem;
+}
+.text-light-texto-secondary {
+    --tw-text-opacity: 1;
+    color: rgb(37 37 37 / var(--tw-text-opacity));
+}
+.transition-colors {
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+.job-card:where(.astro-THRIS56X):nth-child(2n) {
+    transform: translate(100%);
+    padding-right: 20px;
+    padding-left: 40px;
+}
+
+.even\:translate-x-full:nth-child(even) {
+    --tw-translate-x: 100%;
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.job-card:where(.astro-THRIS56X):nth-child(2n) .job-picture:where(.astro-THRIS56X) {
+    left: calc(-120px - 2rem);
+}
+.sm\:left-\[50\%\] {
+    left: 50%;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+    .job-card:where(.astro-THRIS56X):nth-child(2n - 1) .circle:where(.astro-THRIS56X) {
+        left: -10px;
+       
+    }
+    .gradient {
+        background: #006fff;
+        background: linear-gradient(to bottom,#006fff,#0058cc);
+    }
+    .job-card:where(.astro-THRIS56X):nth-child(n) {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+    }
+    .job-card:where(.astro-THRIS56X):nth-child(2n + 1).circle:where(.astro-THRIS56X) {
+        left: -10px;
+    }
+    .job-picture:where(.astro-THRIS56X) {
+        left:0px;
+    }
+    
+    .even\:translate-x-full:nth-child(even) {
+        --tw-translate-x: 5%;
+        padding-left: 1rem;
+         }
+    
+    .w-\[50\%\] {
+        width: 90%;
+    }
+    .job-card:where(.astro-THRIS56X):nth-child(n){
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .job-card:where(.astro-THRIS56X):nth-child(2n) .job-picture:where(.astro-THRIS56X) {
+        left: 0px;
+    }
+
+    .job-card:where(.astro-THRIS56X):nth-child(2n) {
+       
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+  }

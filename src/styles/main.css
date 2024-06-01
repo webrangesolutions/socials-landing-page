@@ -1,0 +1,53 @@
+
+.bg {
+    background: linear-gradient(rgba(0, 21, 73, 1), rgba(0, 21, 73, 0.5)), url('../assets/bgg.jpg');
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+
+.custom-bg-style {
+    background-color: #FFAA45;
+    padding: 0 8px; /* Adjust the padding as needed */
+    height: 20px; /* Set the height as needed */
+  }
+  .lazy-background-container {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set a fixed height for the container */
+  }
+  
+  .lazy-background-image {
+    width: 100%;
+    height: 100%;
+    size: cover;
+    position: center;
+    background-repeat: no-repeat;
+  }
+  .content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Adjust text color based on your design */
+  }
+  @media (max-width: 767px) {
+    /* Adjustments for screens smaller than 768px (e.g., mobile devices) */
+    .bg {
+        height: 680px;
+        background: linear-gradient(rgba(0, 21, 73, 1), rgba(0, 21, 73, 0.5)), url('../assets/bgg-2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+      }
+
+      
+  }

@@ -1,0 +1,39 @@
+/* styles.css */
+
+.containerr {
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    background: radial-gradient( circle farthest-side at left,#0017491a 80%,#ffaa45 20%);
+    display: flex;
+    box-shadow:inset;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+ 
+  .inner-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-side at left, #0017491a 80%,#ffaa45 20%);
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .innermost-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-side at right, #bd6c0c 50%, #ffaa45 100%);
+ 
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
