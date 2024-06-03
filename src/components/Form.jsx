@@ -51,7 +51,7 @@ const Form = () => {
     img.onload = () => {
       setLoaded(true);
     };
-    img.src = '../assets/bgg-2.jpg'; // Replace 'path/to/your/image.jpg' with the actual path to your image
+    img.src = '../assets/bgg-2.webp'; // Replace 'path/to/your/image.webp' with the actual path to your image
   }, []);
  
   return (
@@ -121,7 +121,7 @@ const Form = () => {
     {open &&
    <div onClick={()=>setopen(false)}  class="fixed inset-0 z-50 flex justify-center items-end bg-white  ">
    <div onClick={()=>setopen(false)}  className='flex flex-row w-full justify-center items-end'>
-     <div onClick={()=>setopen(false)} loading="lazy" className={`flex  flex-col justify-center main-background w-full px-[400px] sm:px-4 items-center ${loaded ? 'loaded' : ''}`}>
+     <div onClick={()=>setopen(false)} className={`flex  flex-col justify-center main-background w-full px-[400px] sm:px-4 items-center ${loaded ? 'loaded' : ''}`}>
       
        {/* <div onClick={()=>setopen(false)} className=' cursor-pointer w-16 h-1 my-10 bg-[#53587A] rounded-full' ></div> */}
       

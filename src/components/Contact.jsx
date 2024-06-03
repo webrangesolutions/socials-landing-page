@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import google from "../assets/Store download button.svg"
-import app from "../assets/Store download button (1).svg"
-import facebook from "../assets/facebook.svg"
-import insta from "../assets/Instagram.svg"
-import twitter from "../assets/X.svg"
-import linkedin from "../assets/LinkedIn.svg"
+import google from "../assets/Store download button.webp"
+import app from "../assets/Store download button (1).webp"
+import facebook from "../assets/facebook.webp"
+import insta from "../assets/Instagram.webp"
+import twitter from "../assets/X.webp"
+import linkedin from "../assets/LinkedIn.webp"
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import captcha from "../assets/Logo (1).svg"
+import captcha from "../assets/Logo (1).webp"
 const Contact = () => {
   const [open,setopen] = useState(false)
  

@@ -1,8 +1,8 @@
 import "../styles/main.css"
-import filter from "../assets/DottedFilter.svg"
+import filter from "../assets/DottedFilter.webp"
 const Joinus = () => {
   return (
-    <div className='w-full h-[928px] sm:h-[650px] bg-[#FFF528] flex flex-col' loading="lazy">
+    <div className='w-full h-[928px] sm:h-[650px] bg-[#FFF528] flex flex-col'>
      <div className='absolute'>
         <img style={{ objectFit: 'cover' }} src={filter} className="h-[928px] sm:h-[650px] w-full"/>
       </div>

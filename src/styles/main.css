@@ -1,6 +1,6 @@
 
 .bg {
-    background: linear-gradient(rgba(0, 21, 73, 1), rgba(0, 21, 73, 0.5)), url('../assets/bgg.jpg');
+    background: linear-gradient(rgba(0, 21, 73, 1), rgba(0, 21, 73, 0.5)), url('../assets/bgg.webp');
         background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
     /* Adjustments for screens smaller than 768px (e.g., mobile devices) */
     .bg {
         height: 680px;
-        background: linear-gradient(rgba(0, 21, 73, 1), rgba(0, 21, 73, 0.5)), url('../assets/bgg-2.jpg');
+        background: linear-gradient(rgba(0, 21, 73, 1), rgba(0, 21, 73, 0.5)), url('../assets/bgg-2.webp');
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;

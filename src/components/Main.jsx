@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/main.css";
 
 import "react-lazy-load-image-component/src/effects/opacity.css"; // Optional CSS for image effects
-import avt1 from "../assets/avt4.svg";
-import avt2 from "../assets/avt2.svg";
-import avt3 from "../assets/avt3.svg";
-import avt4 from "../assets/avt4.svg";
-import bg from "../assets/bgg.jpg";
+import avt1 from "../assets/avt4.webp";
+import avt2 from "../assets/avt2.webp";
+import avt3 from "../assets/avt3.webp";
+import avt4 from "../assets/avt4.webp";
+import bg from "../assets/bgg.webp";
 const Mainbg = () => {
   return (
     <div
@@ -14,7 +14,6 @@ const Mainbg = () => {
       style={{
         background: `url(${bg})`,
       }}
-      loading="lazy"
     >
       <div className="absolute"></div>
 

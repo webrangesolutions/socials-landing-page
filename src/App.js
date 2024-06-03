@@ -1,7 +1,6 @@
 import "./App.css";
 import Aboutus from "./components/Aboutus";
 import Contact from "./components/Contact";
-import Form from "./components/Form";
 import Joinus from "./components/Joinus";
 import Main from "./components/Main";
 import NavbarMain from "./components/NavbarMain";

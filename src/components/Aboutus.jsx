@@ -1,12 +1,12 @@
 import React from 'react'
-import bg from "../assets/Resources (1).svg"
-import aboutus from "../assets/aboutus.svg"
-import ourmission from "../assets/ourvision.svg"
-import ourvision from "../assets/ourmission.svg"
+import bg from "../assets/Resources (1).webp"
+import aboutus from "../assets/aboutus.webp"
+import ourmission from "../assets/ourvision.webp"
+import ourvision from "../assets/ourmission.webp"
 const Aboutus = () => {
   return (
     <div className='relative h-[1998px] sm:mb-20 sm:h-fit overflow-y-hidden overflow-x-hidden'>
-    <img src={bg} loading="lazy"  className='absolute top-0 left-0 z-10 w-[432px] sm:object-cover sm:w-[130px] sm:h-[600px] h-[1728px] my-20 ml-5'/>
+    <img src={bg}  className='absolute top-0 left-0 z-10 w-[432px] sm:object-cover sm:w-[130px] sm:h-[600px] h-[1728px] my-20 ml-5'/>
     <div className='pt-40 sm:pt-20 sm:pl-10 sm:pr-2 pl-20 pr-10 z-20 relative'>
         <div className='w-[100%] overflow-x-hidden flex sm:flex sm:flex-col sm:items-start items-center'>
             <div className='w-[45%] xl:w-[44%] sm:w-[80%]'>
@@ -19,7 +19,7 @@ const Aboutus = () => {
                 </p>
             </div>
             <div className='w-[55%] xl:w-[70%] sm:w-[100%] flex sm:items-end justify-end'>
-              <img src={aboutus} loading="lazy"  className='sm:h-[100px] sm:w-full sm:object-cover'/>
+              <img src={aboutus}  className='sm:h-[100px] sm:w-full sm:object-cover'/>
             </div>
         </div>
 
@@ -31,7 +31,7 @@ broadcasters to tell deeper, more engaging stories. We provide the tools to make
 every match more interactive and every fan's cheer heard around the world. </p>
             </div>
             <div className='w-[58%] xl:w-[55%] sm:w-full sm:flex sm:items-end'>
-              <img src={ourmission} loading="lazy"  className='sm:h-[150px] sm:w-full sm:object-cover'/>
+              <img src={ourmission}  className='sm:h-[150px] sm:w-full sm:object-cover'/>
             </div>
         </div>
 
@@ -46,7 +46,7 @@ As well as rewarding Fans with money in their pocket.
 </p>
             </div>
             <div className='w-[65%] xl:w-[53%] sm:w-full  sm:flex sm:items-end'>
-              <img src={ourvision} loading="lazy" className='sm:h-[150px] sm:w-full sm:object-cover'/>
+              <img src={ourvision} className='sm:h-[150px] sm:w-full sm:object-cover'/>
             </div>
         </div>
 
