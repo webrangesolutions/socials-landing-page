@@ -11,11 +11,12 @@ const Aboutus = () => {
         <div className='w-[100%] overflow-x-hidden flex sm:flex sm:flex-col sm:items-start items-center'>
             <div className='w-[45%] xl:w-[44%] sm:w-[80%]'>
                 <h1 style={{ fontFamily: 'Norwester' }} className='text-[54px] text-[#FFF528] mb-2 xl:text-[45px]  lg:text-5xl sm:text-xl md:text-2xl w-[80%] xl:w-[90%] lg:w-[80%] md:w-[80%] sm:w-[82%]  font-semibold leading-[60px] xl:leading-[50px] lg:leading-[50px]  sm:leading-10 md:leading-10'>ABOUT US</h1>
-                <p className='font-league-spartan text-[24px]  xl:text-[18px] sm:text-sm  text-white mb-10 sm:mb-2 w-[95%] leading-[30px] xl:leading-[30px] xl:w-[95%]'>At Socials, we are driven by a single goal: to bridge the gap
-                between sports fans and broadcasters. Founded by a team of passionate
-                sports enthusiasts and media experts, 
-                Socials leverages cutting-edge technology 
-                to amplify the voices of fans and enhance the reach of broadcasters.
+                <p className='font-league-spartan text-[24px]  xl:text-[18px] sm:text-sm  text-white mb-10 sm:mb-2 w-[95%] leading-[30px] xl:leading-[30px] xl:w-[95%]'>
+                At vupop, we are driven by a single goal: to bridge the gap
+between sports fans and broadcasters. Founded by a team of passionate
+sports enthusiasts and media experts, 
+vupop leverages cutting-edge technology 
+to amplify the voices of fans and enhance the reach of broadcasters
                 </p>
             </div>
             <div className='w-[55%] xl:w-[70%] sm:w-[100%] flex sm:items-end justify-end'>
@@ -26,7 +27,8 @@ const Aboutus = () => {
         <div className='w-[85%] sm:w-full overflow-x-hidden ml-64 sm:ml-0 xl:ml-56 mt-32 sm:mt-14 flex sm:flex sm:flex-col sm:items-start items-center'>
             <div className='w-[42%] xl:w-[45%] sm:w-[80%]'>
                 <h1 style={{ fontFamily: 'Norwester' }} className='text-[54px] text-[#FFF528] mb-2 xl:text-[45px]  lg:text-5xl sm:text-xl md:text-2xl w-[80%] xl:w-[90%] lg:w-[80%] md:w-[80%] sm:w-[82%]  font-semibold leading-[60px] xl:leading-[50px] lg:leading-[50px]  sm:leading-10 md:leading-10'>OUR MISSION</h1>
-                <p className='font-league-spartan text-[24px]  xl:text-[18px] sm:text-sm text-white mb-10 sm:mb-2 w-[95%] leading-[30px] xl:leading-[30px] xl:w-[95%]'>To revolutionize sports media by enabling fans to share their experiences and
+                <p className='font-league-spartan text-[24px]  xl:text-[18px] sm:text-sm text-white mb-10 sm:mb-2 w-[95%] leading-[30px] xl:leading-[30px] xl:w-[95%]'>
+                To revolutionize sports media by enabling fans to share their experiences and
 broadcasters to tell deeper, more engaging stories. We provide the tools to make 
 every match more interactive and every fan's cheer heard around the world. </p>
             </div>
@@ -38,11 +40,13 @@ every match more interactive and every fan's cheer heard around the world. </p>
         <div className='w-[100%] sm:w-full overflow-x-hidden xl:w-[70%] ml-[430px] sm:ml-0 xl:ml-[400px] mt-32 sm:mt-14 sm:flex sm:flex-col sm:items-start flex items-center overflow-hidden'>
             <div className='w-[45%] xl:w-[47%] sm:w-[80%]'>
                 <h1 style={{ fontFamily: 'Norwester' }} className='text-[54px] text-[#FFF528] mb-2 xl:text-[45px]  lg:text-5xl sm:text-xl md:text-2xl w-[80%] xl:w-[90%] lg:w-[80%] md:w-[80%] sm:w-[82%]  font-semibold leading-[60px] xl:leading-[50px] lg:leading-[50px]  sm:leading-10 md:leading-10'>OUR VISION</h1>
-                <p className='font-league-spartan text-[24px]  xl:text-[18px] sm:text-sm  text-white mb-10 sm:mb-2 w-[95%] leading-[30px] xl:leading-[30px] xl:w-[95%]'>Imagine a world where every great sports moment can be shared 
-and celebrated by a global community. At Socials, we are making that world
+                <p className='font-league-spartan text-[24px]  xl:text-[18px] sm:text-sm  text-white mb-10 sm:mb-2 w-[95%] leading-[30px] xl:leading-[30px] xl:w-[95%]'>
+                Imagine a world where every great sports moment can be shared 
+and celebrated by a global community. At vupop, we are making that world
 a reality, one game at a time, ensuring that fan content not only supports
 but leads the narrative in sports broadcasting.
 As well as rewarding Fans with money in their pocket.
+
 </p>
             </div>
             <div className='w-[65%] xl:w-[53%] sm:w-full  sm:flex sm:items-end'>

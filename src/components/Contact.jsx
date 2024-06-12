@@ -70,7 +70,7 @@ const Contact = () => {
      </div>
      </div>
      <div className='flex flex-col  gap-2'>
-     <p style={{ fontFamily: 'Norwester' }} className=' text-[24px] text-[#FFF528]   leading-[40px] xl:leading-[30px]'>Also join us on
+     <p style={{ fontFamily: 'Norwester' }} className=' text-[24px] text-[#FFF528]   leading-[40px] xl:leading-[30px]'>Also follow us on
 </p>
 <div className='flex gap-5 sm:gap-2 sm:grid sm:grid-cols-2'>
 <div className='flex gap-1 items-center'>

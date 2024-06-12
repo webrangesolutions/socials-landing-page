@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 
 import { useLocation } from 'react-router-dom';
+import Logo from '../assets/logo.webp'
 import "../styles/norwester.otf"
 const NavbarMain = () => {
   const { pathname } = useLocation();
@@ -18,7 +19,8 @@ const NavbarMain = () => {
   <div class="w-full flex flex-row items-center justify-between  px-10 sm:px-4 md:px-4">
   
   <a href="/" className="flex items-center ">
- <h1 className='Norwester text-[#FFF528] text-[35px] sm:text-lg' style={{ fontFamily: 'Norwester' }} >socials</h1>
+  <img src={Logo} alt="logo" />
+ {/* <h1 className='Norwester text-[#FFF528] text-[35px] sm:text-lg' style={{ fontFamily: 'Norwester' }} >socials</h1> */}
   </a>
 
   <div class="items-center justify-between   flex flex-row md:w-auto " id="mobile-menu-2">
