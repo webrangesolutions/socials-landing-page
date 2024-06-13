@@ -10,7 +10,7 @@ import bg from "../assets/bgg.webp";
 const Mainbg = () => {
   return (
     <div
-      className=" w-full h-[1080px] p-6 bg-gradient-radial-30 bg-opacity-30 flex flex-col pt-20 sm:pt-10  px-10 sm:px-5"
+      className=" w-full h-[1080px] p-6 bg-gradient-radial-30 bg-opacity-30 flex flex-col pt-20 sm:pt-10  px-10 sm:px-5 bg-no-repeat bg-center bg-cover"
       style={{
         background: `url(${bg})`,
       }}
