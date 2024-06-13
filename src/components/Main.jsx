@@ -10,10 +10,13 @@ import bg from "../assets/bgg.webp";
 const Mainbg = () => {
   return (
     <div
-      className=" w-full h-[1080px] p-6 bg-gradient-radial-30 bg-opacity-30 flex flex-col pt-20 sm:pt-10  px-10 sm:px-5 bg-no-repeat bg-center bg-cover"
+      className=" w-full h-50 p-6 bg-gradient-radial-30 bg-opacity-30 flex flex-col pt-20 sm:pt-10  px-10 sm:px-5 bg-no-repeat bg-center bg-cover"
       style={{
-        background: `url(${bg})`,
-      }}
+    backgroundImage: `url(${bg})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover', // Ensure the image covers the entire div without repeating
+    backgroundPosition: 'center', // Center the image
+  }}
     >
       <div className="absolute"></div>
 
