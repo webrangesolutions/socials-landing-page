@@ -55,7 +55,7 @@ As well as rewarding Fans with money in their pocket.
         </div>
 
         <div className='w-full flex flex-col mt-64 sm:mt-20 items-center justify-center'>
-        <h1 style={{ fontFamily: 'Norwester' }} className='text-[141px] text-center text-[#FFF528] mb-14 sm:mb-3 xl:text-[111px]  lg:text-[110px] sm:text-2xl md:text-2xl   font-semibold leading-[67px] xl:leading-[67px] lg:leading-[47px]  sm:leading-10 md:leading-10'>SOCIALS</h1>
+        <h1 style={{ fontFamily: 'Norwester' }} className='text-[141px] text-center text-[#FFF528] mb-14 sm:mb-3 xl:text-[111px]  lg:text-[110px] sm:text-2xl md:text-2xl   font-semibold leading-[67px] xl:leading-[67px] lg:leading-[47px]  sm:leading-10 md:leading-10'>VUPOP</h1>
         <p className='font-league-spartan text-[24px]  xl:text-[18px] text-center  text-white mb-14 sm:mb-6 w-[45%] sm:w-[80%] leading-[30px] xl:leading-[30px] xl:w-[50%]'>Join our exclusive waitlist today and be among the first to experience the future of fan-driven sports media
 </p>   
 <div className='flex gap-2 w-[45%] xl:w-[40%] sm:w-[90%]'>

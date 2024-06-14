@@ -116,7 +116,7 @@ const Contact = () => {
               style={footerStyle}
               className="text-sm sm:mt-4 font-league-spartan text-[#FFF528] sm:text-sm lg:text-sm"
             >
-              Copyright &copy; {new Date().getFullYear()} Socials. All Rights
+              Copyright &copy; {new Date().getFullYear()} Vupop. All Rights
               Reserved.
             </footer>
           </div>

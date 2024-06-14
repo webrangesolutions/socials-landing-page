@@ -17,8 +17,8 @@ const Joinus = () => {
       <p className='font-league-spartan text-[32px] sm:text-lg text-black   text-center w-[70%] leading-[40px] xl:leading-[30px] xl:w-[90%]'>Take the first step towards transforming how sports stories are told and experienced.
 </p>
  <p className='font-league-spartan text-[32px] sm:text-lg text-black mb-20 sm:mb-10 text-center w-[55%] leading-[40px] xl:leading-[30px] xl:w-[90%]'>
-Join Socials today, and contribute to a community that
- values authenticity and rewards Fans for their social content</p>
+Join Vupop today, and contribute to a community that
+ values authenticity and rewards Fans for their vupop content</p>
    
   
      

@@ -50,7 +50,7 @@ const Whyus = () => {
             <div className='w-[45%] sm:w-[55%] pl-40 sm:pl-8 xl:w-[44%]'>
               <img src={share}  className='sm:w-[40px] sm:h-[40%]'/>
                 <h1 style={{ fontFamily: 'Norwester' }} className='text-[24px] text-[#FFF528] mb-2 xl:text-[24px]  lg:text-2xl sm:text-base md:text-2xl    font-semibold leading-[60px] xl:leading-[50px] lg:leading-[50px]  sm:leading-10 md:leading-10'>Capture & Share</h1>
-               <p className='font-league-spartan text-[20px]  xl:text-[20px] sm:text-sm text-white mb-10 sm:mb-2 w-[54%] sm:w-[90%] leading-[30px] xl:leading-[30px] xl:w-[70%]'>Record your live sports experiences and Post like you would in any social media platform </p>
+               <p className='font-league-spartan text-[20px]  xl:text-[20px] sm:text-sm text-white mb-10 sm:mb-2 w-[54%] sm:w-[90%] leading-[30px] xl:leading-[30px] xl:w-[70%]'>Record your live sports experiences and Post like you would in any vupop media platform </p>
           <img src={line1}  className='absolute   w-[55%] left-0'/>
             </div>
             <div className='w-[55%] xl:w-[55%] sm:w-[45%] h-[932px] sm:h-fit flex justify-end'>
