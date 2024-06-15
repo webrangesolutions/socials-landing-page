@@ -17,7 +17,7 @@ const Joinus = () => {
       <p className='font-league-spartan text-[32px] sm:text-lg text-black   text-center w-[70%] leading-[40px] xl:leading-[30px] xl:w-[90%]'>Take the first step towards transforming how sports stories are told and experienced.
 </p>
  <p className='font-league-spartan text-[32px] sm:text-lg text-black mb-20 sm:mb-10 text-center w-[55%] leading-[40px] xl:leading-[30px] xl:w-[90%]'>
-Join Vupop today, and contribute to a community that
+Join vupop today, and contribute to a community that
  values authenticity and rewards Fans for their vupop content</p>
    
   
@@ -31,14 +31,14 @@ Join Vupop today, and contribute to a community that
       For Fans
       </h1> 
      
-       <button className="w-full bg-black h-[56px] text-[#FFF528] items-start font-league-spartan text-[24px] sm:text-base text-center">Download the Vupop now</button>
+       <button className="w-full bg-black h-[56px] text-[#FFF528] items-start font-league-spartan text-[24px] sm:text-base text-center">Download the vupop app now</button>
       </div>
 
     <div className="w-[50%] flex flex-col justify-start">
     <h1 style={{ fontFamily: 'Norwester' }} className='text-[64px] text-start text-black mb-6 xl:text-[64px]  lg:text-5xl sm:text-lg md:text-2xl w-[100%] xl:w-[100%] lg:w-[100%] md:w-[80%] sm:w-[82%] font-medium leading-[90px] xl:leading-[80px] lg:leading-[80px]  sm:leading-10 md:leading-10'>
       For Broadcasters
       </h1> 
-      <button className="w-full  bg-black h-[56px] text-[#FFF528] font-league-spartan text-[24px] sm:text-base text-center items-center">Register Now</button>
+      <button className="w-full  bg-black h-[56px] text-[#FFF528] font-league-spartan text-[24px] sm:text-base text-center items-center">Broadcasters Book a Demo Now</button>
     </div>
 
    </div>

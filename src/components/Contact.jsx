@@ -71,7 +71,7 @@ const Contact = () => {
             <div className="flex gap-4">
               <img
                 src={google}
-                className="w-[168px] h-[56px] sm:w-[120px] sm:h-[40px]"
+                className="w-[168px] h-[56px] sm:w-[120px] sm:h-[40px] bg-black"
               />
               <img
                 src={app}
@@ -144,7 +144,7 @@ const Contact = () => {
                   value={formik.values.name}
                   type="text"
                   placeholder="Full Name"
-                  className=" bg-[#1B1B1B] rounded-xl w-full h-[70px] placeholder:text-[#A1A5C1] text-2xl sm:text-lg md:text-lg lg:text-2xl font-normal font-league-spartan px-5 items-center"
+                  className=" bg-[#1B1B1B] rounded-xl w-full h-[70px] placeholder:text-[#A1A5C1] text-white text-2xl sm:text-lg md:text-lg lg:text-2xl font-normal font-league-spartan px-5 items-center"
                 />
                 {formik.touched.name && formik.errors.name ? (
                   <p className="text-[#FF0000]">{formik.errors.name}</p>
@@ -162,7 +162,7 @@ const Contact = () => {
                   onBlur={formik.handleBlur}
                   value={formik.values.phone}
                   placeholder="Phone Number"
-                  className=" bg-[#1B1B1B] rounded-xl w-full h-[70px] placeholder:text-[#A1A5C1] text-2xl lg:text-2xl md:text-lg sm:text-lg font-normal font-league-spartan px-5 items-center"
+                  className=" bg-[#1B1B1B] rounded-xl w-full h-[70px] placeholder:text-[#A1A5C1] text-white text-2xl lg:text-2xl md:text-lg sm:text-lg font-normal font-league-spartan px-5 items-center"
                 />
                 {formik.touched.phone && formik.errors.phone ? (
                   <div className="text-[#FF0000] ">{formik.errors.phone}</div>
@@ -181,7 +181,7 @@ const Contact = () => {
                 onBlur={formik.handleBlur}
                 value={formik.values.email}
                 placeholder="Email"
-                className=" bg-[#1B1B1B] rounded-xl w-full h-[70px]   placeholder:text-[#A1A5C1] text-2xl lg:text-2xl sm:text-lg md:text-lg font-normal font-league-spartan px-5 items-center"
+                className=" bg-[#1B1B1B] rounded-xl w-full h-[70px]   placeholder:text-[#A1A5C1] text-white text-2xl lg:text-2xl sm:text-lg md:text-lg font-normal font-league-spartan px-5 items-center"
               />
               {formik.touched.email && formik.errors.email ? (
                 <div className="text-[#FF0000]">{formik.errors.email}</div>

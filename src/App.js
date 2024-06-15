@@ -2,7 +2,7 @@ import "./App.css";
 import Aboutus from "./components/Aboutus";
 import Contact from "./components/Contact";
 import Joinus from "./components/Joinus";
-import Main from "./components/Main";
+import Slider from './components/Slider'
 import NavbarMain from "./components/NavbarMain";
 import Whyus from "./components/Whyus";
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="">
       <NavbarMain />
-      <Main />
+      <Slider />
       <div id="about-us">
         <Aboutus />
       </div>
