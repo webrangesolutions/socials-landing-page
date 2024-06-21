@@ -85,9 +85,9 @@ const Mainbg2 = ({yellow}) => {
         </div>
        
         <div className="w-full mt-10 flex flex-col justify-center items-center">
-          <h1 className="text-[#FFF528]  font-league-spartan text-2xl sm:text-base font-normal">
+          {/* <h1 className="text-[#FFF528]  font-league-spartan text-2xl sm:text-base font-normal">
             Scroll down
-          </h1>
+          </h1> */}
           <div className="bg-[#FFF528] flex w-11 h-11 sm:w-7 sm:h-7 justify-center items-center rounded-full">
             <a href="#features">
               <svg
