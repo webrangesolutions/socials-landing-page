@@ -8,6 +8,7 @@ import linkedin from "../assets/LinkedIn.webp";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import captcha from "../assets/Logo (1).webp";
+import CaptchaTest from "./Capcha";
 const Contact = () => {
   const [open, setopen] = useState(false);
 
@@ -187,8 +188,8 @@ const Contact = () => {
                 <div className="text-[#FF0000]">{formik.errors.email}</div>
               ) : null}
             </div>
-            <div className="bg-[#1B1B1B] items-center w-[302px] sm:w-full h-fit rounded-md flex justify-between py-2 px-2">
-              <div className="pl-5 flex gap-2">
+            {/* <div className="bg-[#1B1B1B] items-center w-[302px] sm:w-full h-fit rounded-md flex justify-between py-2 px-2"> */}
+              {/* <div className="pl-5 flex gap-2">
                 <input
                   type="checkbox"
                   className="w-[32px] h-[32px] border border-[#FFF528] bg-[#1B1B1B]"
@@ -196,14 +197,17 @@ const Contact = () => {
                 <p className="font-league-spartan text-[12px] text-[#ffffff80]   leading-[30px] xl:leading-[30px] ">
                   I am human
                 </p>
-              </div>
-              <div className="flex flex-col justify-center items-center gap-1">
+              </div> */}
+
+              <CaptchaTest />
+              {/* <div className="flex flex-col justify-center items-center gap-1">
+             
                 <img src={captcha} className="w-[46px] h-[54px]" />
                 <p className="font-league-spartan text-[12px] text-[#ffffff80] ">
                   Privacy - Terms
                 </p>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
 
             <button
               type="submit"

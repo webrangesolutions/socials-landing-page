@@ -36,12 +36,27 @@ const Mainbg3 = ({yellow}) => {
           Transform your broadcasts with authentic fan perspectives and expand
           your audience engagement
         </p>
-        <a
+        {/* <a
           href=""
           className=" w-fit mt-10 sm:mt-4 sm:mx-0 my-5 items-center justify-center text-[#FFF528] text-center px-10 py-4 sm:py-3 sm:px-6 md:py-3 md:px-8 bg-black rounded-xl  font-bold sm:text-base md:text-lg text-xl xl:text-xl lg:text-xl"
         >
           Join Waitlist
+        </a> */}
+
+        <div className="flex gap-x-3">
+        <a
+          href=""
+          className=" w-fit mt-10 sm:mt-4 sm:mx-0 my-5 items-center justify-center text-center px-10 py-4 sm:py-3 sm:px-6 md:py-3 md:px-8 bg-black rounded-xl  font-bold text-[#FFF528] sm:text-base md:text-lg text-xl xl:text-xl lg:text-xl"
+        >
+          Join Waitlist
         </a>
+        <a
+          href=""
+          className=" w-fit mt-10 sm:mt-4 sm:mx-0 my-5 items-center justify-center text-center px-10 py-4 sm:py-3 bg-none border border-3 border-black sm:px-6 md:py-3 md:px-8 rounded-xl  font-bold text-black sm:text-base md:text-lg text-xl xl:text-xl lg:text-xl"
+        >
+          Download App
+        </a>
+        </div>
         <div className="flex flex-row pt-8 gap-6 sm:gap-3 items-center">
           <div className="flex flex-row -space-x-14 sm:-space-x-9">
             <div className="w-[92px] h-[92px] sm:w-[50px] sm:h-[50px] rounded-full ">

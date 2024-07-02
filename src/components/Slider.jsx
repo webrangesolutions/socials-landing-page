@@ -5,10 +5,15 @@ import Main3 from './Main3';
 
 const ComponentSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
+        setIsTransitioning(false);
+      }, 500); // Adjust the transition duration time (milliseconds)
     }, 5000);
 
     // Cleanup the interval on component unmount
@@ -29,9 +34,13 @@ const ComponentSlider = () => {
   };
 
   return (
-    <div>
-      {renderComponent()}
-    </div>
+    // <div className="flex justify-center items-center">
+      // <div className="max-w-md w-full overflow-hidden">
+        <div className={`transition-opacity duration-500 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
+          {renderComponent()}
+        </div>
+      // </div>
+    // </div>
   );
 };
 
