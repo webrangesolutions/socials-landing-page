@@ -2,10 +2,7 @@ import React from "react";
 import "../styles/main.css";
 
 import "react-lazy-load-image-component/src/effects/opacity.css"; // Optional CSS for image effects
-import avt1 from "../assets/avt4.webp";
-import avt2 from "../assets/avt2.webp";
-import avt3 from "../assets/avt3.webp";
-import avt4 from "../assets/avt4.webp";
+import Images from './images'
 import bg from "../assets/bg2.webp";
 const Mainbg2 = ({yellow}) => {
   return (
@@ -51,37 +48,7 @@ const Mainbg2 = ({yellow}) => {
         </div>
         
         <div className="flex flex-row pt-8 gap-6 sm:gap-3 items-center">
-          <div className="flex flex-row -space-x-14 sm:-space-x-9">
-            <div className="w-[92px] h-[92px] sm:w-[50px] sm:h-[50px] rounded-full ">
-              <img
-                src={avt1}
-                style={{ objectFit: "cover" }}
-                className="w-[92px] h-[92px] sm:w-[50px] sm:h-[50px] rounded-full"
-              />
-            </div>
-            <div className="w-[92px] h-[92px] sm:w-[50px] sm:h-[50px] rounded-full ">
-              <img
-                src={avt2}
-                style={{ objectFit: "cover" }}
-                className="w-[92px] h-[92px] sm:w-[50px] sm:h-[50px] rounded-full"
-              />
-            </div>
-            <div className="w-[92px] h-[92px] sm:w-[50px] sm:h-[50px] rounded-full ">
-              <img
-                src={avt3}
-                style={{ objectFit: "cover" }}
-                className="w-[92px] h-[92px] sm:w-[50px] sm:h-[50px] rounded-full"
-              />
-            </div>
-            <div className="w-[92px] h-[92px] sm:w-[50px] sm:h-[50px] rounded-full">
-              <img
-                src={avt4}
-                style={{ objectFit: "cover" }}
-                className="w-[92px] h-[92px] sm:w-[50px] sm:h-[50px] rounded-full"
-              />
-            </div>
-          </div>
-
+          <Images />
           <div className="h-[72px] sm:h-[50px] w-[2px] bg-[#FFF528]"> </div>
           <div>
             <p className="text-[#FFF528]   font-league-spartan sm:text-base text-xl font-semibold">

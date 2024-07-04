@@ -14,7 +14,7 @@ import axios from "../axios"
 
 const Contact = () => {
   const [open, setopen] = useState(false);
-  const [captcha, setCaptcha] = useState(false)
+  const [captchaa, setCaptcha] = useState(false)
 
   const formik = useFormik({
     initialValues: {
@@ -34,7 +34,9 @@ const Contact = () => {
       companyLicense: Yup.string().required("Required"),
     }),
     onSubmit: async (values, { resetForm }) => {
+      console.log("in on submit")
       try {
+
         const data = {
           name: values.name,
           email: values.email,
@@ -43,7 +45,7 @@ const Contact = () => {
           companyName: values.companyName,
           companyLicense: values.companyLicense,
         };
-        if(captcha==true){
+        if(captchaa==true){
           console.log("submitted successfully")
         }else{
           console.log("error occured")
