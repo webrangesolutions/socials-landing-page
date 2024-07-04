@@ -9,8 +9,12 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import captcha from "../assets/Logo (1).webp";
 import CaptchaTest from "./Capcha";
+
+import axios from "../axios" 
+
 const Contact = () => {
   const [open, setopen] = useState(false);
+  const [captcha, setCaptcha] = useState(false)
 
   const formik = useFormik({
     initialValues: {
@@ -39,6 +43,11 @@ const Contact = () => {
           companyName: values.companyName,
           companyLicense: values.companyLicense,
         };
+        if(captcha==true){
+          console.log("submitted successfully")
+        }else{
+          console.log("error occured")
+        }
 
         resetForm();
         setopen(true);
@@ -165,10 +174,28 @@ const Contact = () => {
                   placeholder="Phone Number"
                   className=" bg-[#1B1B1B] rounded-xl w-full h-[70px] placeholder:text-[#A1A5C1] text-white text-2xl lg:text-2xl md:text-lg sm:text-lg font-normal font-league-spartan px-5 items-center"
                 />
-                {formik.touched.phone && formik.errors.phone ? (
-                  <div className="text-[#FF0000] ">{formik.errors.phone}</div>
+                {formik.touched.name && formik.errors.name ? (
+                  <p className="text-[#FF0000]">{formik.errors.name}</p>
                 ) : null}
               </div>
+            </div>
+            <div>
+              <p className="font-league-spartan text-[24px] text-[#FFF]   leading-[40px] xl:leading-[30px] ">
+              Broadcaster/Company Name
+              </p>
+              <input
+                id="companyName"
+                name="companyName"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.companyName}
+                type="text"
+                placeholder="Sky News"
+                className=" bg-[#1B1B1B] rounded-xl w-full h-[70px]   placeholder:text-[#A1A5C1] text-white text-2xl lg:text-2xl sm:text-lg md:text-lg font-normal font-league-spartan px-5 items-center"
+              />
+              {formik.touched.companyName && formik.errors.companyName ? (
+                <div className="text-[#FF0000]">{formik.errors.companyName}</div>
+              ) : null}
             </div>
             <div>
               <p className="font-league-spartan text-[24px] text-[#FFF]   leading-[40px] xl:leading-[30px] ">
@@ -188,33 +215,18 @@ const Contact = () => {
                 <div className="text-[#FF0000]">{formik.errors.email}</div>
               ) : null}
             </div>
-            {/* <div className="bg-[#1B1B1B] items-center w-[302px] sm:w-full h-fit rounded-md flex justify-between py-2 px-2"> */}
-              {/* <div className="pl-5 flex gap-2">
-                <input
-                  type="checkbox"
-                  className="w-[32px] h-[32px] border border-[#FFF528] bg-[#1B1B1B]"
-                />
-                <p className="font-league-spartan text-[12px] text-[#ffffff80]   leading-[30px] xl:leading-[30px] ">
-                  I am human
-                </p>
-              </div> */}
+           
 
-              <CaptchaTest />
-              {/* <div className="flex flex-col justify-center items-center gap-1">
-             
-                <img src={captcha} className="w-[46px] h-[54px]" />
-                <p className="font-league-spartan text-[12px] text-[#ffffff80] ">
-                  Privacy - Terms
-                </p>
-              </div> */}
-            {/* </div> */}
+              <CaptchaTest setCaptcha={setCaptcha} />
+              
 
             <button
               type="submit"
-              className=" w-fit sm:w-full sm:h-[70px] items-center justify-center text-center px-10 py-4 sm:py-3 sm:px-8 md:py-3 md:px-8 bg-[#FFF528] rounded-lg  font-medium text-[#000] sm:text-base md:text-base text-base xl:text-base lg:text-base"
+              className=" w-fit sm:w-full sm:h-[60px] items-center justify-center text-center px-10 py-3 sm:py-2 sm:px-8 md:py-2 md:px-8 bg-[#FFF528] rounded-lg  font-medium text-[#000] sm:text-base md:text-base text-base xl:text-base lg:text-base"
             >
               Join Waitlist{" "}
             </button>
+
           </form>
           <div className="flex gap-5 sm:gap-5 justify-end items-center sm:pb-10 sm:pr-0 pr-10">
             <p className="font-league-spartan text-[14px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">

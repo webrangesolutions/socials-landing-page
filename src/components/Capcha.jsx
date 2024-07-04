@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const CaptchaTest = () => {
+const CaptchaTest = ({setCaptcha}) => {
   const [verified, setVerified] = useState(false);
 
   const onChange = (value) => {
-    // if (value) {
-    //   setVerified(true);
-    //   alert('Captcha Matched');
-    // } else {
-    //   setVerified(false);
-    //   alert('Captcha Does Not Match');
-    // }
+    if (value) {
+      setCaptcha(true);
+    } else {
+      setCaptcha(false);
+    }
   };
 
   useEffect(() => {
@@ -48,7 +46,7 @@ const CaptchaTest = () => {
    
        <ReCAPTCHA
       
-        sitekey="6LepYAYqAAAAAEYBZgu-x1BJqXcQmetC6q-MFY3D" // Replace with your actual site key
+        sitekey='6LepYAYqAAAAAEYBZgu-x1BJqXcQmetC6q-MFY3D'// Replace with your actual site key
         onChange={onChange}
         theme="dark"
       />
