@@ -1,8 +1,8 @@
 import React from 'react'
-import avt1 from "../assets/avt4.webp";
+import avt1 from "../assets/avt4.jpg";
 import avt2 from "../assets/avt2.webp";
 import avt3 from "../assets/avt3.webp";
-import avt4 from "../assets/avt4.webp";
+import avt4 from "../assets/avt4.jpg";
 
 const images = () => {
   return (
@@ -32,7 +32,7 @@ const images = () => {
               <img
                 src={avt4}
                 style={{ objectFit: "cover" }}
-                className="w-[70px] h-[70px] sm:w-[50px] sm:h-[50px] rounded-full"
+                className="w-[74px] h-[74px] sm:w-[50px] sm:h-[50px] rounded-full"
               />
             </div>
           </div>
