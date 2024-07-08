@@ -34,7 +34,6 @@ const Contact = () => {
       companyLicense: Yup.string().required("Required"),
     }),
     onSubmit: async (values, { resetForm }) => {
-      console.log("in on submit")
       try {
 
         const data = {
@@ -50,7 +49,7 @@ const Contact = () => {
         }else{
           console.log("error occured")
         }
-
+        console.log("in on submit")
         resetForm();
         setopen(true);
       } catch (error) {
