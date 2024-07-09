@@ -7,14 +7,13 @@ import twitter from "../assets/X.webp";
 import linkedin from "../assets/LinkedIn.webp";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import captcha from "../assets/Logo (1).webp";
-import CaptchaTest from "./Capcha";
-
-import axios from "../axios" 
+import BroadCasterForm from './broadCasterForm'
+import { fabClasses } from "@mui/material";
 
 const Contact = () => {
   const [open, setopen] = useState(false);
   const [captchaa, setCaptcha] = useState(false)
+  const [showForm, setShowForm] = useState(fabClasses)
 
   const formik = useFormik({
     initialValues: {
@@ -133,12 +132,12 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-[50%] h-[543px] sm:h-fit sm:w-full sm:border-t  sm:border-[#FFF528] px-10 sm:pl-5 sm:pr-5 flex flex-col justify-start relative sm:static">
+        <div className="w-[50%] h-[543px] sm:h-fit sm:w-full sm:border-t  sm:border-[#FFF528] px-10 sm:pl-5 sm:pr-5 flex flex-col items-between justify-between relative sm:static">
           <div className="h-full absolute sm:border-t sm:hidden sm:border-[#FFF528]  left-0 border-r border-[#FFF528]"></div>
 
           {/* broadcaster wait list */}
 
-          <form
+          {/* <form
             onSubmit={formik.handleSubmit}
             className=" flex flex-col gap-5 mb-10 "
           >
@@ -228,7 +227,33 @@ const Contact = () => {
               Join Waitlist{" "}
             </button>
 
-          </form>
+          </form> */}
+
+          {/* broadcaster form */}
+         
+
+          <div>
+          <h1
+              style={{ fontFamily: "Norwester" }}
+              className="text-[48px]  text-[#FFF528] xl:text-[48px]  lg:text-5xl sm:text-2xl md:text-2xl w-[100%] xl:w-[100%] lg:w-[100%] md:w-[80%] sm:w-[82%] font-medium leading-[90px] xl:leading-[80px] lg:leading-[80px]  sm:leading-[80px] md:leading-10"
+            >
+              Broadcaster Waitlist
+            </h1>
+            <p
+              style={{ fontFamily: "Norwester" }}
+              className=" text-[#FFF528] font-league-spartan text-[18px] sm:text-base"
+            >
+              Register Interest here and we will be in touch to book a demo
+            </p>
+            <button
+              onClick={() => setShowForm(true)}
+              className="mt-4 w-fit sm:w-full sm:h-[60px] items-center justify-center text-center px-10 py-3 sm:py-2 sm:px-8 md:py-2 md:px-8 bg-[#FFF528] rounded-lg  font-medium text-[#000] sm:text-base md:text-base text-base xl:text-base lg:text-base"
+            >
+              Join Waitlist{" "}
+            </button>
+          </div>
+
+
           <div className="flex gap-5 sm:gap-5 justify-end items-center sm:pb-10 sm:pr-0 pr-10">
             <p className="font-league-spartan text-[14px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
               Privacy Policy
@@ -269,6 +294,9 @@ const Contact = () => {
           </svg>
         </div>
       </div>
+      {showForm == true && <>
+      <BroadCasterForm />
+      </>}
     </div>
   );
 };

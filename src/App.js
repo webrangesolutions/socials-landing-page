@@ -10,15 +10,18 @@ import EmailForm from "./components/emailForm";
 
 function App() {
   const [showEmailForm, setShowEmailForm] = useState(false);
-  const [close, setClose] = useState(false)
 
   useEffect(() => {
+    const formSubmitted = localStorage.getItem('formSubmitted');
+
+    if (!formSubmitted) {
+      setShowEmailForm(true);
+    }
+
     const handleScroll = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop;
-      if (scrollY > 500 && close==false) { // You can adjust this value based on your requirements
+      if (scrollY > 500 && !formSubmitted) { // Show form only if not submitted
         setShowEmailForm(true);
-      } else {
-        setShowEmailForm(false);
       }
     };
 
@@ -28,7 +31,12 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [close]);
+  }, []);
+
+  const handleFormSubmit = () => {
+    localStorage.setItem('formSubmitted', 'true');
+    setShowEmailForm(false);
+  };
 
   return (
     <div className="">
@@ -46,7 +54,7 @@ function App() {
       </div>
       {showEmailForm && (
         <div id="email-form">
-          <EmailForm onClose={() => setClose(true)} />
+          <EmailForm onSubmit={handleFormSubmit} />
         </div>
       )}
     </div>
