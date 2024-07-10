@@ -31,7 +31,7 @@ Join vupop today, and contribute to a community that
       For Fans
       </h1> 
      
-       <button className="w-full bg-black h-[56px] text-[#FFF528] items-start font-league-spartan text-[24px] sm:text-base text-center">Download the vupop app now</button>
+       <button className="w-full bg-black h-[56px] text-[#FFF528] items-start font-league-spartan text-[24px] sm:text-base text-center">Download the vupop app soon</button>
       </div>
 
     <div className="w-[50%] flex flex-col justify-start">
