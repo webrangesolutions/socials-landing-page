@@ -49,8 +49,8 @@ const Whyus = () => {
         <div className='w-[100%] pt-10 sm:pt-0 overflow-x-hidden flex items-center'>
             <div className='w-[45%] sm:w-[55%] pl-40 sm:pl-8 xl:w-[44%]'>
               <img src={share}  className='sm:w-[40px] sm:h-[40%]'/>
-                <h1 style={{ fontFamily: 'Norwester' }} className='text-[24px] text-[#FFF528] mb-2 xl:text-[24px]  lg:text-2xl sm:text-base md:text-2xl    font-semibold leading-[60px] xl:leading-[50px] lg:leading-[50px]  sm:leading-10 md:leading-10'>Capture & Share</h1>
-               <p className='font-league-spartan text-[20px]  xl:text-[20px] sm:text-sm text-white mb-10 sm:mb-2 w-[54%] sm:w-[90%] leading-[30px] xl:leading-[30px] xl:w-[70%]'>Record your live sports experiences and Post like you would in any vupop media platform </p>
+                <h1 style={{ fontFamily: 'Norwester' }} className='text-[24px] text-[#FFF528] mb-2 xl:text-[24px]  lg:text-2xl sm:text-base md:text-2xl    font-semibold leading-[60px] xl:leading-[50px] lg:leading-[50px]  sm:leading-10 md:leading-10'>Capture & Share </h1>
+               <p className='font-league-spartan text-[20px]  xl:text-[20px] sm:text-sm text-white mb-10 sm:mb-2 w-[54%] sm:w-[90%] leading-[30px] xl:leading-[30px] xl:w-[70%]'>Record your fan experiences, share with your friends in vupop and broadcasters may buy your video!</p>
           <img src={line1}  className='absolute   w-[55%] left-0'/>
             </div>
             <div className='w-[55%] xl:w-[55%] sm:w-[45%] h-[932px] sm:h-fit flex justify-end'>
@@ -60,17 +60,19 @@ const Whyus = () => {
 
         <div className='w-[100%] overflow-x-hidden flex items-center'>
        
-       <div className='w-[704px] sm:w-[45%] xl:w-[704px] sm:h-fit h-[1038px] pl-10 sm:pl-2 flex justify-start'>
-             <img src={saving} className='sm:h-[450px]'/>
+       <div className='w-[704px] sm:w-[50%] xl:w-[704px] sm:h-fit h-[1038px] pl-10 sm:pl-2 flex justify-start'>
+             <img src={saving} className='sm:h-[280px]'/>
+             {/* <img src={saving} className='sm:h-[450px]'/> */}
            </div>
            <div className='w-[55%] sm:w-[55%] flex flex-col justify-end items-end   xl:w-[45%]'>
             <div className='w-full pl-80 xl:pl-40 sm:pl-8 justify-center items-start flex flex-col'>
              <img src={earning} className='sm:w-[40px] sm:h-[40%]'/>
+             
                <h1 style={{ fontFamily: 'Norwester' }} className='text-[24px]  text-[#FFF528] mb-2 xl:text-[24px]  lg:text-2xl  sm:text-base md:text-2xl   font-semibold leading-[60px] xl:leading-[50px] lg:leading-[50px]  sm:leading-10 md:leading-10'>Monetize Your Passion</h1>
               <p className='font-league-spartan text-[20px]  xl:text-[20px] sm:text-sm  text-white mb-10 sm:mb-2 pb-10 sm:pb-2 w-[47%] sm:w-[95%] leading-[30px] xl:leading-[30px] xl:w-[70%]'>Get paid if your content gets featured in broadcasts globally.</p>
         
          </div>
-         <img src={line2} className='absolute  w-[55%] right-0'/>
+         <img src={line2} className='absolute  w-[50%] right-0'/>
            </div>
          
        </div>

@@ -7,7 +7,7 @@ const ComponentSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   
-  const [isDownloaded, setIsDownloaded] = useState(false)
+  const [isDownloaded, setIsDownloaded] = useState(true)
 
   useEffect(() => {
     const interval = setInterval(() => {

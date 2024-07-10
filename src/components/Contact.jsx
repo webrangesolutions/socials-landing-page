@@ -7,13 +7,13 @@ import twitter from "../assets/X.webp";
 import linkedin from "../assets/LinkedIn.webp";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import BroadCasterForm from './broadCasterForm'
+import BroadCasterForm from "./broadCasterForm";
 import { fabClasses } from "@mui/material";
 
 const Contact = () => {
   const [open, setopen] = useState(false);
-  const [captchaa, setCaptcha] = useState(false)
-  const [showForm, setShowForm] = useState(fabClasses)
+  const [captchaa, setCaptcha] = useState(false);
+  const [showForm, setShowForm] = useState(fabClasses);
 
   const formik = useFormik({
     initialValues: {
@@ -34,7 +34,6 @@ const Contact = () => {
     }),
     onSubmit: async (values, { resetForm }) => {
       try {
-
         const data = {
           name: values.name,
           email: values.email,
@@ -43,12 +42,12 @@ const Contact = () => {
           companyName: values.companyName,
           companyLicense: values.companyLicense,
         };
-        if(captchaa==true){
-          console.log("submitted successfully")
-        }else{
-          console.log("error occured")
+        if (captchaa == true) {
+          console.log("submitted successfully");
+        } else {
+          console.log("error occured");
         }
-        console.log("in on submit")
+        console.log("in on submit");
         resetForm();
         setopen(true);
       } catch (error) {
@@ -76,7 +75,7 @@ const Contact = () => {
               style={{ fontFamily: "Norwester" }}
               className="text-[48px]  text-[#FFF528] xl:text-[48px]  lg:text-5xl sm:text-2xl md:text-2xl w-[100%] xl:w-[100%] lg:w-[100%] md:w-[80%] sm:w-[82%] font-medium leading-[90px] xl:leading-[80px] lg:leading-[80px]  sm:leading-[80px] md:leading-10"
             >
-              Download the app now
+              Download the app soom
             </h1>
             <div className="flex gap-4">
               <img
@@ -97,29 +96,44 @@ const Contact = () => {
               Also follow us on
             </p>
             <div className="flex gap-5 sm:gap-2 sm:grid sm:grid-cols-2">
-              <div className="flex gap-1 items-center">
+              {/* <div className="flex gap-1 items-center">
                 <img src={facebook} />
                 <p className="font-league-spartan text-[16px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
                   Facebook
                 </p>
-              </div>
+              </div> */}
               <div className="flex gap-1 items-center">
-                <img src={insta} />
-                <p className="font-league-spartan text-[16px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
-                  Instagram
-                </p>
+                <a
+                  href="https://www.instagram.com/vupop.io?igsh=a2RzeGllNDc5ZHFs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center"
+                >
+                  <img src={insta} alt="Instagram" />
+                  <p className="font-league-spartan text-[16px] text-[#FFF528] text-center leading-[40px] xl:leading-[30px]">
+                    Instagram
+                  </p>
+                </a>
               </div>
-              <div className="flex gap-1 items-center">
+
+              {/* <div className="flex gap-1 items-center">
                 <img src={twitter} />
                 <p className="font-league-spartan text-[16px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
                   Twitter
                 </p>
-              </div>
+              </div> */}
               <div className="flex gap-1 items-center">
+              <a
+                  href="https://www.linkedin.com/company/vupop/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center"
+                >
                 <img src={linkedin} />
                 <p className="font-league-spartan text-[16px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
                   Linkedin
                 </p>
+                </a>
               </div>
             </div>
             <footer
@@ -230,10 +244,9 @@ const Contact = () => {
           </form> */}
 
           {/* broadcaster form */}
-         
 
           <div>
-          <h1
+            <h1
               style={{ fontFamily: "Norwester" }}
               className="text-[48px]  text-[#FFF528] xl:text-[48px]  lg:text-5xl sm:text-2xl md:text-2xl w-[100%] xl:w-[100%] lg:w-[100%] md:w-[80%] sm:w-[82%] font-medium leading-[90px] xl:leading-[80px] lg:leading-[80px]  sm:leading-[80px] md:leading-10"
             >
@@ -249,10 +262,9 @@ const Contact = () => {
               onClick={() => setShowForm(true)}
               className="mt-4 w-fit sm:w-full sm:h-[60px] items-center justify-center text-center px-10 py-3 sm:py-2 sm:px-8 md:py-2 md:px-8 bg-[#FFF528] rounded-lg  font-medium text-[#000] sm:text-base md:text-base text-base xl:text-base lg:text-base"
             >
-              Join Waitlist{" "}
+              Book a Broadcaster Demo{" "}
             </button>
           </div>
-
 
           <div className="flex gap-5 sm:gap-5 justify-end items-center sm:pb-10 sm:pr-0 pr-10">
             <p className="font-league-spartan text-[14px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
@@ -294,9 +306,11 @@ const Contact = () => {
           </svg>
         </div>
       </div>
-      {showForm == true && <>
-      <BroadCasterForm />
-      </>}
+      {showForm == true && (
+        <>
+          <BroadCasterForm />
+        </>
+      )}
     </div>
   );
 };

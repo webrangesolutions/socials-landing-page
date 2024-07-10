@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import bg from "../assets/Resources (1).webp";
 import aboutus from "../assets/aboutus.webp";
 import ourmission from "../assets/ourvision.webp";
 import ourvision from "../assets/ourmission.webp";
 import Resources from '../assets/Resources.webp'
+import EmailForm from "./emailForm";
 const Aboutus = () => {
+  const [isSubmit, setIsSubmit] = useState(false)
   return (
     <div className="relative h-[1998px] sm:mb-20 sm:h-fit overflow-y-hidden overflow-x-hidden">
       <img
@@ -98,8 +100,10 @@ const Aboutus = () => {
               placeholder="abc@gmail.com"
             />
             <a
-              data-icon="Contactus"
-              href="#Contactus"
+            onClick={()=> setIsSubmit(true)}
+              // data-icon="about-us"
+              // href="#about-us"
+              href=""
               className="w-fit text-center items-center flex font-league-spartan py-3 pl-6 pr-6 xl:px-2 sm:py-1 sm:px-2 md:py-2 md:px-2 text-[#000] font-bold text-base md:text-xs sm:text-[8px]  bg-[#FFF528] "
             >
               Join Waitlist
@@ -107,6 +111,11 @@ const Aboutus = () => {
           </div>
         </div>
       </div>
+      {/* {isSubmit &&(
+        <div id="email-form">
+          <EmailForm onClose={()=> setIsSubmit(false)} />
+        </div>
+      )} */}
     </div>
   );
 };
