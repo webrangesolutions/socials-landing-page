@@ -4,7 +4,8 @@ import "../styles/main.css";
 import "react-lazy-load-image-component/src/effects/opacity.css"; // Optional CSS for image effects
 import Images from './images'
 import bg from "../assets/bg2.webp";
-const Mainbg2 = ({yellow}) => {
+const Mainbg2 = ({isDownloaded, setIsDownloaded}) => {
+
   return (
     <div
      className=" w-full h-50 p-6 bg-gradient-radial-30 bg-opacity-30 flex flex-col  pt-20 sm:pt-10   px-10 sm:px-5 "
@@ -39,12 +40,17 @@ const Mainbg2 = ({yellow}) => {
         >
           Join Waitlist
         </a>
-        <a
+        { isDownloaded == false &&
+         (
+           <button
+          onClick={()=> setIsDownloaded(true)}
           href=""
           className=" w-fit mt-10 sm:mt-4 sm:mx-0 my-5 items-center justify-center text-center px-10 py-4 sm:py-3 bg-none border border-3 border-[#FFF528] sm:px-6 md:py-3 md:px-8 rounded-xl  font-bold text-[#FFF528] sm:text-base md:text-lg text-xl xl:text-xl lg:text-xl"
-        >
+          >
           Download App
-        </a>
+        </button>
+        )}
+     
         </div>
         
         <div className="flex flex-row pt-8 gap-6 sm:gap-3 items-center">

@@ -6,6 +6,8 @@ import Main3 from './Main3';
 const ComponentSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  
+  const [isDownloaded, setIsDownloaded] = useState(false)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,11 +25,11 @@ const ComponentSlider = () => {
   const renderComponent = () => {
     switch (currentIndex) {
       case 0:
-        return <Main />;
+        return <Main isDownloaded={isDownloaded} setIsDownloaded={setIsDownloaded} />;
       case 1:
-        return <Main2 />;
+        return <Main2 isDownloaded={isDownloaded} setIsDownloaded={setIsDownloaded} />;
       case 2:
-        return <Main3 />;
+        return <Main3 isDownloaded={isDownloaded} setIsDownloaded={setIsDownloaded} />;
       default:
         return null;
     }
