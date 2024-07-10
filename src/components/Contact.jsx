@@ -75,7 +75,7 @@ const Contact = () => {
               style={{ fontFamily: "Norwester" }}
               className="text-[48px]  text-[#FFF528] xl:text-[48px]  lg:text-5xl sm:text-2xl md:text-2xl w-[100%] xl:w-[100%] lg:w-[100%] md:w-[80%] sm:w-[82%] font-medium leading-[90px] xl:leading-[80px] lg:leading-[80px]  sm:leading-[80px] md:leading-10"
             >
-              Download the app soom
+              Download the app soon
             </h1>
             <div className="flex gap-4">
               <img
