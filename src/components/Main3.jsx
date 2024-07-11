@@ -1,27 +1,48 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "../styles/main.css";
 
 import "react-lazy-load-image-component/src/effects/opacity.css"; // Optional CSS for image effects
 import Images from './images'
 import bg from "../assets/bg2.webp";
 const Mainbg3 = ({isDownloaded, setIsDownloaded}) => {
+  const [marginTop, setMarginTop] = useState('32%');
+
+  useEffect(() => {
+    const handleResize = () => {
+      if(window.innerWidth <= 340) { // Assuming 'sm' breakpoint is 640px
+        setMarginTop('49%');
+      }
+      else if (window.innerWidth <= 640) { // Assuming 'sm' breakpoint is 640px
+        setMarginTop('42%');
+      } else {
+        setMarginTop('30%');
+      }
+    };
+
+    handleResize(); // Call once to set initial value
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div
-     className=" w-full h-50 p-6 bg-gradient-radial-30 bg-opacity-30 flex flex-col  pt-20 sm:pt-10   px-10 sm:px-5 "
+     className=" w-full h-50 p-6 bg-gradient-radial-30 bg-opacity-30 flex flex-col pt-10   px-10 sm:px-5 "
      style={{
     backgroundImage: `url(${bg})`,
     backgroundRepeat: 'no-repeat',
     backgroundColor: '#FFF528', // Add the background color
 
     // backgroundSize: 'cover', // Ensure the image covers the entire div without repeating
-    backgroundSize: '97% auto', // Adjust this value to decrease the width of the image
-    backgroundPosition: 'center 97px', // Adjust the second value to set the margin from the top
+    backgroundSize: '90% auto', // Adjust this value to decrease the width of the image
+    backgroundPosition: 'center 90px', // Adjust the second value to set the margin from the top
  
   }}
     >
       <div className="absolute"></div>
 
-      <div className="flex flex-col items-center mt-32  sm:mt-20 md:mt-20 ">
+      <div className="flex flex-col items-center" style={{ marginTop }}>
         <h1
           style={{ fontFamily: "Norwester" }}
           className="text-[72px] text-black mb-2 xl:text-[62px] text-center  lg:text-5xl sm:text-2xl md:text-2xl w-[80%] xl:w-[90%] lg:w-[80%] md:w-[80%] sm:w-[95%]     font-bold leading-[90px] xl:leading-[80px] lg:leading-[80px]  sm:leading-10 md:leading-10"
@@ -29,10 +50,10 @@ const Mainbg3 = ({isDownloaded, setIsDownloaded}) => {
           Unleash the Power of Fan Content in Sports Broadcasting
         </h1>
 
-        <p className="font-league-spartan text-center text-[32px] sm:text-xl sm:w-[80%] text-black mb-10 w-[60%] leading-[40px] xl:leading-[30px] xl:w-[70%]">
+        {/* <p className="font-league-spartan text-center text-[32px] sm:text-xl sm:w-[80%] text-black mb-10 w-[60%] leading-[40px] xl:leading-[30px] xl:w-[70%]">
           Transform your broadcasts with authentic fan perspectives and expand
           your audience engagement
-        </p>
+        </p> */}
         {/* <a
           href=""
           className=" w-fit mt-10 sm:mt-4 sm:mx-0 my-5 items-center justify-center text-[#FFF528] text-center px-10 py-4 sm:py-3 sm:px-6 md:py-3 md:px-8 bg-black rounded-xl  font-bold sm:text-base md:text-lg text-xl xl:text-xl lg:text-xl"
