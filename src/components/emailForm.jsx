@@ -1,30 +1,41 @@
 import React, { useEffect } from 'react';
 
 const EmailForm = ({ onClose }) => {
+  // useEffect(() => {
+  //   // Load AWeber form script
+  //   const script = document.createElement('script');
+  //   script.src = "//forms.aweber.com/form/55/907931455.js";
+  //   script.id = "aweber-wjs-g7ve8s4fn";
+  //   document.body.appendChild(script);
+
+  //   // Handler for form submission
+  //   const handleSubmit = (event) => {
+  //     if (event.target.tagName === 'FORM') {
+  //       onClose()
+  //       // Add your form submission logic here
+  //     }
+  //   };
+
+  //   // Add submit event listener to the document body
+  //   document.body.addEventListener('submit', handleSubmit);
+
+  //   // Cleanup script and event listener when component unmounts
+  //   return () => {
+  //     document.body.removeChild(script);
+  //     document.body.removeEventListener('submit', handleSubmit);
+  //   };
+  // }, []);
+
   useEffect(() => {
-    // Function to load AWeber form script
-    const loadScript = () => {
-      const script = document.createElement('script');
-      script.src = "//forms.aweber.com/form/55/907931455.js";
-      script.id = "aweber-wjs-g7ve8s4fn";
-      document.body.appendChild(script);
-    };
+    // Load AWeber form script
+    const script = document.createElement('script');
+    script.src = "//forms.aweber.com/form/55/907931455.js";
+    script.id = "aweber-wjs-g7ve8s4fn";
+    document.body.appendChild(script);
 
-    // Remove existing script if any
-    const existingScript = document.getElementById("aweber-wjs-g7ve8s4fn");
-    if (existingScript) {
-      document.body.removeChild(existingScript);
-    }
-
-    // Load the script
-    loadScript();
-
-    // Cleanup script when component unmounts
+    // Cleanup the script when component unmounts
     return () => {
-      const script = document.getElementById("aweber-wjs-g7ve8s4fn");
-      if (script) {
-        document.body.removeChild(script);
-      }
+      document.body.removeChild(script);
     };
   }, []);
 

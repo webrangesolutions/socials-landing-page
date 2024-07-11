@@ -267,17 +267,31 @@ const Contact = () => {
           </div>
 
           <div className="flex gap-5 sm:gap-5 justify-end items-center sm:pb-10 sm:pr-0 pr-10">
+          <a
+                  href="https://app.termly.io/policy-viewer/policy.html?policyUUID=e5c558a2-c29a-4962-b8ee-6731ba52b8ed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center"
+                >
             <p className="font-league-spartan text-[14px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
               Privacy Policy
             </p>
+            </a>
 
+            <a
+                  href="https://app.termly.io/policy-viewer/policy.html?policyUUID=39e5fa85-27e2-43da-a164-b75e93ce1488"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-1 items-center"
+                >
             <p className="font-league-spartan text-[14px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
               Terms of Service
             </p>
+            </a>
 
-            <p className="font-league-spartan text-[14px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
+            {/* <p className="font-league-spartan text-[14px] text-[#FFF528]   text-center  leading-[40px] xl:leading-[30px] ">
               Cookie Settings
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
