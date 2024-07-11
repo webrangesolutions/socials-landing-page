@@ -24,12 +24,12 @@ const Mainbg3 = ({isDownloaded, setIsDownloaded}) => {
       <div className="flex flex-col items-center mt-32  sm:mt-20 md:mt-20 ">
         <h1
           style={{ fontFamily: "Norwester" }}
-          className="text-[72px] text-white mb-2 xl:text-[62px] text-center  lg:text-5xl sm:text-2xl md:text-2xl w-[80%] xl:w-[90%] lg:w-[80%] md:w-[80%] sm:w-[95%]     font-bold leading-[90px] xl:leading-[80px] lg:leading-[80px]  sm:leading-10 md:leading-10"
+          className="text-[72px] text-black mb-2 xl:text-[62px] text-center  lg:text-5xl sm:text-2xl md:text-2xl w-[80%] xl:w-[90%] lg:w-[80%] md:w-[80%] sm:w-[95%]     font-bold leading-[90px] xl:leading-[80px] lg:leading-[80px]  sm:leading-10 md:leading-10"
         >
           Unleash the Power of Fan Content in Sports Broadcasting
         </h1>
 
-        <p className="font-league-spartan text-center text-[32px] sm:text-xl sm:w-[80%] text-white mb-10 w-[60%] leading-[40px] xl:leading-[30px] xl:w-[70%]">
+        <p className="font-league-spartan text-center text-[32px] sm:text-xl sm:w-[80%] text-black mb-10 w-[60%] leading-[40px] xl:leading-[30px] xl:w-[70%]">
           Transform your broadcasts with authentic fan perspectives and expand
           your audience engagement
         </p>
