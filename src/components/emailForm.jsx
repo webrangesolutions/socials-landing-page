@@ -5,7 +5,7 @@ const EmailForm = ({ onClose }) => {
     // Load AWeber form script
     const script = document.createElement('script');
     script.src = "//forms.aweber.com/form/55/907931455.js";
-    script.id = "aweber-wjs-g7ve8s4fn";
+    script.id = "aweber-wjs-0nlomx44u";
     document.body.appendChild(script);
 
     // Handler for form submission
