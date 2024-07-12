@@ -94,19 +94,20 @@ const Aboutus = () => {
             Join our exclusive waitlist today and be among the first to
             experience the future of fan-driven sports media
           </p>
-          <div className="flex gap-2 w-[45%] xl:w-[40%] sm:w-[90%]">
-            <input
+          <div className="flex justify-center xl:w-[40%] sm:w-[90%]">
+            {/* <input
               className="border border-[#FFF528] w-[80%] xl:w-[75%] sm:w-[70%] font-league-spartan h-[56px] sm:h-[40px] p-2 items-center bg-[#000000] placeholder:text-[#fff] text-[#fff]"
               placeholder="abc@gmail.com"
-            />
+            /> */}
             <button
             onClick={()=> setShowForm(true)}
               // data-icon="about-us"
               // href="#about-us"
               href=""
-              className="w-fit text-center items-center flex font-league-spartan py-3 pl-6 pr-6 xl:px-2 sm:py-1 sm:px-2 md:py-2 md:px-2 text-[#000] font-bold text-base md:text-xs sm:text-[8px]  bg-[#FFF528] "
+              className="w-80 text-center rounded-lg items-center flex font-league-spartan py-3 pl-6 pr-6 xl:px-2 sm:py-1 sm:px-2 md:py-2 md:px-2 text-[#000] font-bold text-base md:text-xs sm:text-[8px]  bg-[#FFF528] "
             >
-              Join Waitlist
+            <div className="flex justify-center items-center w-full"> Join Waitlist</div>
+              
             </button>
           </div>
         </div>

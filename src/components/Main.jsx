@@ -4,9 +4,7 @@ import "../styles/main.css";
 import "react-lazy-load-image-component/src/effects/opacity.css"; // Optional CSS for image effects
 import Images from './images'
 import bg from "../assets/bgg.webp";
-import WaitlistForm from './emailForm'
-const Mainbg = ({isDownloaded, setIsDownloaded}) => {
-  const [showForm, setShowForm] = useState(false)
+const Mainbg = ({isDownloaded, setIsDownloaded, showForm, setShowForm}) => {
   return (
     <div
       className=" w-full h-50 p-6 bg-gradient-radial-30 bg-opacity-30 flex flex-col pt-20 sm:pt-10  px-10 sm:px-5 bg-no-repeat bg-center bg-cover"
@@ -83,11 +81,7 @@ const Mainbg = ({isDownloaded, setIsDownloaded}) => {
           </div>
         </div>
       </div>
-      {showForm == true && (
-        <>
-          <WaitlistForm />
-        </>
-      )}
+     
     </div>
   );
 };

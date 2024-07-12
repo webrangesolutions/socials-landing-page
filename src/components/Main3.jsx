@@ -6,10 +6,8 @@ import Images from './images'
 import bg from "../assets/bg2.webp";
 
 import WaitlistForm from './emailForm'
-const Mainbg3 = ({isDownloaded, setIsDownloaded}) => {
+const Mainbg3 = ({isDownloaded, setIsDownloaded, showForm, setShowForm}) => {
   const [marginTop, setMarginTop] = useState('32%');
-  
-  const [showForm, setShowForm] = useState(false)
 
   useEffect(() => {
     const handleResize = () => {
@@ -115,11 +113,11 @@ const Mainbg3 = ({isDownloaded, setIsDownloaded}) => {
           </div>
         </div>
       </div>
-      {showForm == true && (
+      {/* {showForm == true && (
         <>
           <WaitlistForm />
         </>
-      )}
+      )} */}
     </div>
   );
 };
