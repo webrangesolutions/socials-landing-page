@@ -12,27 +12,27 @@ function App() {
   const [showEmailForm, setShowEmailForm] = useState(false);
   const [isSubmit, setIsSubmit] = useState(true)
 
-  useEffect(() => {
-    const formSubmitted = localStorage.getItem('formSubmitted');
+  // useEffect(() => {
+  //   const formSubmitted = localStorage.getItem('formSubmitted');
 
-    if (!formSubmitted) {
-      setShowEmailForm(true);
-    }
+  //   if (!formSubmitted) {
+  //     setShowEmailForm(true);
+  //   }
 
-    const handleScroll = () => {
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      if (scrollY > 500 && !formSubmitted) { // Show form only if not submitted
-        setShowEmailForm(true);
-      }
-    };
+  //   const handleScroll = () => {
+  //     const scrollY = window.scrollY || document.documentElement.scrollTop;
+  //     if (scrollY > 500 && !formSubmitted) { // Show form only if not submitted
+  //       setShowEmailForm(true);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   // Cleanup the event listener on component unmount
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   const handleFormSubmit = () => {
     localStorage.setItem('formSubmitted', 'true');
@@ -53,11 +53,11 @@ function App() {
         <Joinus />
         <Contact />
       </div>
-      {showEmailForm && isSubmit &&(
+      {/* {showEmailForm && isSubmit &&(
         <div id="email-form">
           <EmailForm onClose={()=> setIsSubmit(false)} />
         </div>
-      )}
+      )} */}
     </div>
   );
 }

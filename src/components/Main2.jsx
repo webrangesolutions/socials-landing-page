@@ -4,8 +4,12 @@ import "../styles/main.css";
 import "react-lazy-load-image-component/src/effects/opacity.css"; // Optional CSS for image effects
 import Images from './images'
 import bg from "../assets/bg2.webp";
+
+import WaitlistForm from './emailForm'
 const Mainbg2 = ({isDownloaded, setIsDownloaded}) => {
   const [marginTop, setMarginTop] = useState('32%');
+  
+  const [showForm, setShowForm] = useState(false)
 
   useEffect(() => {
     const handleResize = () => {
@@ -56,12 +60,12 @@ const Mainbg2 = ({isDownloaded, setIsDownloaded}) => {
           your audience engagement
         </p> */}
         <div className="flex gap-x-3">
-        <a
-          href=""
+        <button
+          onClick={() => setShowForm(true)}
           className=" w-fit mt-10 sm:mt-4 sm:mx-0 my-5 items-center justify-center text-center px-10 py-4 sm:py-3 sm:px-6 md:py-3 md:px-8 bg-[#FFF528] rounded-xl  font-bold text-[#000] sm:text-base md:text-lg text-xl xl:text-xl lg:text-xl"
         >
           Join Waitlist
-        </a>
+        </button>
         { isDownloaded == false &&
          (
            <button
@@ -105,6 +109,11 @@ const Mainbg2 = ({isDownloaded, setIsDownloaded}) => {
           </div>
         </div>
       </div>
+      {showForm == true && (
+        <>
+          <WaitlistForm />
+        </>
+      )}
     </div>
   );
 };

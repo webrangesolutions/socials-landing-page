@@ -4,9 +4,9 @@ import aboutus from "../assets/aboutus.webp";
 import ourmission from "../assets/ourvision.webp";
 import ourvision from "../assets/ourmission.webp";
 import Resources from '../assets/Resources.webp'
-import EmailForm from "./emailForm";
+import WaitlistForm from "./emailForm";
 const Aboutus = () => {
-  const [isSubmit, setIsSubmit] = useState(false)
+  const [showForm, setShowForm] = useState(false)
   return (
     <div className="relative h-[1998px] sm:mb-20 sm:h-fit overflow-y-hidden overflow-x-hidden">
       <img
@@ -99,23 +99,23 @@ const Aboutus = () => {
               className="border border-[#FFF528] w-[80%] xl:w-[75%] sm:w-[70%] font-league-spartan h-[56px] sm:h-[40px] p-2 items-center bg-[#000000] placeholder:text-[#fff] text-[#fff]"
               placeholder="abc@gmail.com"
             />
-            <a
-            onClick={()=> setIsSubmit(true)}
+            <button
+            onClick={()=> setShowForm(true)}
               // data-icon="about-us"
               // href="#about-us"
               href=""
               className="w-fit text-center items-center flex font-league-spartan py-3 pl-6 pr-6 xl:px-2 sm:py-1 sm:px-2 md:py-2 md:px-2 text-[#000] font-bold text-base md:text-xs sm:text-[8px]  bg-[#FFF528] "
             >
               Join Waitlist
-            </a>
+            </button>
           </div>
         </div>
       </div>
-      {/* {isSubmit &&(
-        <div id="email-form">
-          <EmailForm onClose={()=> setIsSubmit(false)} />
-        </div>
-      )} */}
+      {showForm == true && (
+        <>
+          <WaitlistForm />
+        </>
+      )}
     </div>
   );
 };
