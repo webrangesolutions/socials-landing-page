@@ -56,7 +56,7 @@ const Aboutus = () => {
           <div className="w-[58%] xl:w-[55%] sm:w-full sm:flex sm:items-end">
             <img
               src={ourmission}
-              className="sm:h-[150px] sm:w-full sm:object-cover"
+              className="sm:h-[150px] sm:w-full sm:object-cover h-[400px] w-full"
             />
           </div>
         </div>
